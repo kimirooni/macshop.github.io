@@ -12,11 +12,7 @@ export default class Details extends Component {
                   const {id, company, img, info, price, title, inCart} = value.detailProduct;
                     return(
                         <div className = "container py-5">
-                            <div className = "row">
-                                <div className = "col-10 mx-auto text-center text-slamted text-blue my-5">
-                                    <h1>{title}</h1>
-                                </div>                               
-                            </div>
+                            
                             <div className="row">
                                 <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
                                 <div className = "container" onClick={() => {value.openIMGModal(id);}}>    
@@ -25,9 +21,7 @@ export default class Details extends Component {
                                 </div>
                                 <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
                                 <h2> {title} </h2>
-                                <h4 className = "text-title text-uppercase">
-                                    <span className="text-uppercase" > {company} </span>
-                                </h4>
+                                
                                 <h4 className = "text-Blue">
                                     <strong>
                                         price: <span>$</span> 
@@ -42,13 +36,13 @@ export default class Details extends Component {
                                 </p>
                                 <div>
                                     <Link to='/'>
-                                        <ButtonContainer>
+                                        <ButtonContainer >
                                             Back
                                         </ButtonContainer>
                                     </Link>
                                     
                                     <ButtonContainer 
-                                        
+                                        style={{marginLeft:"1rem"}}
                                         disabled={inCart?true:false}
                                         onClick={() => {
                                             value.addToCart(id);

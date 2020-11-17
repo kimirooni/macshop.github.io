@@ -3,7 +3,7 @@ import {ButtonClose} from './Button';
 import styled from"styled-components";
 import {ProductConsumer} from "../context";
 import {Link} from "react-router-dom";
-
+import Carousel from "react-elastic-carousel";
 
 export default class Modal extends Component {
   render(){
@@ -26,15 +26,20 @@ export default class Modal extends Component {
                   x
                   </ButtonClose>
                   </Link>
+                  <Carousel>
                   <img src={img} className ="img-fluid" alt="product"   />
-                  <div id="modal" className = "col-8 mx-auto col-md-6 col-lg-4 text center text-capitialized p-1 " > 
                   <img src={img} className ="img-fluid" alt="product"   />
+                  <img src={img} className ="img-fluid" alt="product"   />
+                  </Carousel>
+                  
+                
+                  
                   </div>
                   </div>
                   
                 
                 </div>
-                </div>
+               
               </ModalContainer>
             );
           }

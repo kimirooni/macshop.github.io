@@ -52,37 +52,9 @@ export const storeProducts = [
     count: 0,
     total: 0,
   },
-  {
-    id: 7,
-    title: " Test2",
-    img: "https://cdn.vox-cdn.com/thumbor/CA5WLxSUTsWcaoO_1xUmPsrAvzU=/0x0:1920x1080/1200x675/filters:focal(1030x331:1336x637)/cdn.vox-cdn.com/uploads/chorus_image/image/65632309/jbareham_191158_ply0958_decade_lolengends.0.jpg",
-    price: 106,
-    info: 'Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify."',
-    inCart: false,
-    count: 0,
-    total: 0,
-  },
-  {
-    id: 8,
-    title: " Test2",
-    img: "https://cdn.vox-cdn.com/thumbor/CA5WLxSUTsWcaoO_1xUmPsrAvzU=/0x0:1920x1080/1200x675/filters:focal(1030x331:1336x637)/cdn.vox-cdn.com/uploads/chorus_image/image/65632309/jbareham_191158_ply0958_decade_lolengends.0.jpg",
-    price: 106,
-    info: 'Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify."',
-    inCart: false,
-    count: 0,
-    total: 0,
-  },
-
-  {
-    id: 9,
-    title: " Test2",
-    img: "https://cdn.vox-cdn.com/thumbor/CA5WLxSUTsWcaoO_1xUmPsrAvzU=/0x0:1920x1080/1200x675/filters:focal(1030x331:1336x637)/cdn.vox-cdn.com/uploads/chorus_image/image/65632309/jbareham_191158_ply0958_decade_lolengends.0.jpg",
-    price: 106,
-    info: 'Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify."',
-    inCart: false,
-    count: 0,
-    total: 0,
-  },
+  
+  
+ 
 ];
 
 export const detailProduct = {

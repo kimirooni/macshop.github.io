@@ -9,6 +9,8 @@ import Default from './components/Default';
 import Modal from './components/Modal';
 import CartModal from './components/CartModal';
 import Cart from "./components/Cart"
+import BottomBar from './components/BottomBar';
+import About from "./components/About"
 //import Product from './components/Product';
 
 
@@ -17,12 +19,15 @@ class App extends Component {
         return (
             <React.Fragment>
               <NavBar />
+              
               <Switch>  
               <Route exact path= "/" component={ProductList}/>              
                 <Route path= "/details" component={Details}/> 
-                <Route path="/cart" component={Cart} />              
+                <Route path="/cart" component={Cart} />   
+                <Route path="/about" component={About}/>           
                 <Route component={Default}/> 
-                </Switch>   
+                </Switch>  
+                <BottomBar/> 
                 <Modal />   
                 <CartModal/>
             </React.Fragment>
