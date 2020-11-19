@@ -18,11 +18,12 @@ export default class ProductList extends Component {
             <React.Fragment> 
                 
                 <Carousel> 
-                    <Link to='/cart'>
-                    <img src={"New BattleCast Nasus.png"} style={{marginTop: "1rem"}}></img>
+                    <Link to='/specialscreen'>
+                    <img src={"New BattleCast Nasus.png"} style={{marginTop: "1rem"}}
+                    className="img-fluid"></img>
                     </Link>
                     <Link to='/cart'>
-                    <img src={"Macarooni.png"}  style={{marginTop: "1rem"}}></img>
+                    <img src={"Macarooni.png"}  style={{marginTop: "1rem"}} className="img-fluid"></img>
                     </Link>
                    
            

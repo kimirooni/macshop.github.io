@@ -8,7 +8,7 @@ import {ButtonContainer} from './Button';
 import CartColumns from './CartColumns';
 import EmptyCart from "./EmptyCart";
 import CartList from "./CartList";
-import CartTotals from "./CartTotals"
+import CartTotals from "./CartTotals";
 
 
 
@@ -26,6 +26,7 @@ export default class About extends Component {
                 <h1 style={{fontSize:"1.5rem"}}>What was this website made with? React JS</h1>
                 <h1 style={{marginTop:"5rem"}}>Email: kimhnguyn@gmail.com</h1> 
                 <h1>Phone: 678-862-6577</h1> 
+               
                 </div>
                    
             </div>

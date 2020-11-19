@@ -12,6 +12,8 @@ class ProductProvider extends Component {
         modalProduct: detailProduct,
         IMGmodalOpen: false,
         IMGmodalProduct: detailProduct,
+        OOSmodalOpen: false, //out of stock modal = OOS
+        OOSmodalProduct: detailProduct,
         cart:[],
         cartSubTotal: 0,
         cartTax: 0,
@@ -91,6 +93,20 @@ class ProductProvider extends Component {
     closeIMGModal = () => {
         this.setState(()=>{
             return{IMGmodalOpen: false};
+
+        });
+
+    };
+    openOOSModal = id => {
+        const product = this.getItem(id);
+        this.setState(()=>{
+            return{OOSmodalProduct: product, OOSmodalOpen:true};
+        });
+
+    }
+    closeOOSModal = () => {
+        this.setState(()=>{
+            return{OOSmodalOpen: false};
 
         });
 
@@ -184,6 +200,8 @@ class ProductProvider extends Component {
                 closeModal:this.closeModal,
                 openIMGModal:this.openIMGModal,
                 closeIMGModal:this.closeIMGModal,
+                openOOSModal:this.openOOSModal,
+                closeOOSModal:this.closeOOSModal,
                 increment: this.increment,
                 decrement:this.decrement,
                 removeItem:this.removeItem,

@@ -10,10 +10,10 @@ import Modal from './components/Modal';
 import CartModal from './components/CartModal';
 import Cart from "./components/Cart"
 import BottomBar from './components/BottomBar';
-import About from "./components/About"
+import About from "./components/About";
 //import Product from './components/Product';
-
-
+import SpecialScreen from "./components/SpecialScreen";
+import OOSModal from "./components/OutOfStock"
 class App extends Component {
     render() {
         return (
@@ -24,12 +24,14 @@ class App extends Component {
               <Route exact path= "/" component={ProductList}/>              
                 <Route path= "/details" component={Details}/> 
                 <Route path="/cart" component={Cart} />   
-                <Route path="/about" component={About}/>           
+                <Route path="/about" component={About}/>  
+                <Route path="/specialscreen" component={SpecialScreen}/>        
                 <Route component={Default}/> 
                 </Switch>  
                 <BottomBar/> 
                 <Modal />   
                 <CartModal/>
+                <OOSModal/>
             </React.Fragment>
         );
     }
